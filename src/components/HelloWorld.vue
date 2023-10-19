@@ -66,7 +66,7 @@ export default {
   font-weight: 700;
   border-radius: 4px;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h3 {

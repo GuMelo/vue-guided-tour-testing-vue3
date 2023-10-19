@@ -1,6 +1,6 @@
 <template>
   <img class="step-2" alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld class="hello" msg="Welcome to Your Vue.js App"/>
   <vue-guided-tour :steps="steps" />
 </template>
 
@@ -50,7 +50,7 @@ export default {
           content: 'Plugins Instalados',
           popover: {
             placement: 'center',
-            position: 'top',
+            position: 'right',
           },
         },
         {
@@ -59,7 +59,7 @@ export default {
           content: 'Links Importantes',
           popover: {
             placement: 'center',
-            position: 'top',
+            position: 'bottom',
           },
         },
         {
@@ -95,5 +95,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello {
+  width: 500px;
 }
 </style>
